@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+
+    <h1 class="header">Rock Paper Scissors Game</h1>
+
+    <!-- <div class="gamemode">
+        <h3>What would you like the score limit to be?</h2>
+        <form>
+            <input type="button" id="Classic" class="mode" value="Classic (3)" >
+            <input type="button" id="Custom" class="mode" value="Custom">
+            <input type="text" class="custom" style="width: 15px; margin-right: 2px;">
+            <input type="submit" class="custom" value="Submit">
+        </form>
+    </div> -->
+
+    <hr class="divider">
+    <div class="main">
+    <div class="scoreboard">
+        <div class="board"><span>Round: <span id="round">0</span></span></div>
+        <div>Player Score:  <span id="pScore">0</span> </div>
+        <div>Computer Score:  <span id="cScore">0</span> </div>
+        <div id="case">Make a choice to start game.</div><span id="countdown"></span>
+    </div>    
+    <div class="container">
+    <div class="containerPlayer">
+            <h2>Player's Choice:</h2>
+            <div class="choiceButton Player">
+            <button class="choice" id="Rock"><img class="choiceImg" src="./image/stone-rock-svgrepo-com.svg" alt="Rock"  style="height: 100px; width: 100px;"></button>
+            <button class="choice" id="Paper"><img class="choiceImg" src="./image/paper-svgrepo-com.svg" alt="Paper"  style="height: 100px; width: 100px;"></button>
+            <button class="choice" id="Scissors"><img class="choiceImg" src="./image/scissors-svgrepo-com.svg" alt="Scissors" style="height: 100px; width: 100px;"></button>
+            </div>
+    </div>
+    <div class="containerComputer">
+        <h2>Computer's Choice:</h2>
+        <div class="choiceButton Computer">
+            <button class="cChoice" id="cRock"><img src="./image/stone-rock-svgrepo-com.svg" alt="Rock"  style="height: 100px; width: 100px;"></button>
+            <button class="cChoice" id="cPaper"><img src="./image/paper-svgrepo-com.svg" alt="Paper"  style="height: 100px; width: 100px;"></button>
+            <button class="cChoice" id="cScissors"><img src="./image/scissors-svgrepo-com.svg" alt="Scissors" style="height: 100px; width: 100px;"></button>
+        </div>
+    </div>
+    </div>
+    </div>
+    <hr class="divider">
+
+    <div class="footer">Copyright ©berkaysson 2022</div>
+    
+
+    <script src="game.js"></script>
+</body>
+</html>

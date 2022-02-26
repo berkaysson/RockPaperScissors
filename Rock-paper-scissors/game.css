@@ -1,0 +1,157 @@
+/* html {
+    height: 100%;
+} */
+
+body {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    min-height: 100%;
+    min-width: 100%;
+    background: linear-gradient(160deg, #001442, #0c459c) no-repeat center center fixed;
+    background-size: cover;
+    font-family: cursive;
+    color: #F0F8FF;
+    margin: 0;
+    padding-bottom: 24px;
+}
+
+.header {
+    text-align: center;
+    margin: 20px;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content:center;
+    align-items: center;
+    gap: 30px;
+    flex-direction: column;
+}
+
+.gamemode {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    width: 80%;
+}
+
+.containerPlayer, .containerComputer, .scoreboard {
+    border: #F0F8FF 1.5px solid;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.scoreboard {
+    display: flex;
+    align-items: center;
+    font-size: 1.1em;
+    gap: 10px;
+    min-width: 340px;
+}
+
+.board {
+    font-size: 0.9em;
+    display: flex;
+    gap: 100px;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.choiceButton {
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 5px;
+    gap: 20px;
+}
+
+.choiceButton.Computer {
+    visibility: hidden;
+}
+
+button {
+    border: 0px solid #F0F8FF;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.mode  {
+    padding: 8px;
+    font-family: cursive;
+    border-radius: 10px;
+    border: 1px #F0F8FF solid;
+    color: #001442;
+    margin-right: 5px;
+}
+
+.mode:hover {
+    border: #001442 1px solid;
+}
+
+.mode:active, .custom:active {
+    opacity: 0.8;
+}
+
+
+.custom {
+    font-family: cursive;
+    font-size: 0.725em;
+    padding: 3px;
+    border: 1px #F0F8FF solid;
+    border-radius: 3px;
+    text-align: center;
+    display: none;
+}
+
+hr {
+    /* color: #F0F8FF; */
+    width: 90%;
+    border: #F0F8FF 1px solid;
+    border-radius:1px;
+    margin-bottom: 20px;
+}
+
+.choiceButton.Player button:hover {
+    cursor: pointer;
+}
+
+.choiceButton.Player button:active {
+    opacity: 0.8;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #001442;
+    text-align: center;
+    color: #F0F8FF;
+    padding: 5px;
+    font-size: 12px;
+}
+
+#pScore, #cScore {
+    font-size: 1.2em;  
+}
+
+#countdown {
+    font-size: 0.8em;
+    
+}
